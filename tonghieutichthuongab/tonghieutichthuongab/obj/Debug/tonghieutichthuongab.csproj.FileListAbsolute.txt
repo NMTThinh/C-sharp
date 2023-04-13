@@ -1,0 +1,8 @@
+E:\C#\tonghieutichthuongab\tonghieutichthuongab\bin\Debug\tonghieutichthuongab.exe.config
+E:\C#\tonghieutichthuongab\tonghieutichthuongab\bin\Debug\tonghieutichthuongab.exe
+E:\C#\tonghieutichthuongab\tonghieutichthuongab\bin\Debug\tonghieutichthuongab.pdb
+E:\C#\tonghieutichthuongab\tonghieutichthuongab\obj\Debug\tonghieutichthuongab.csproj.AssemblyReference.cache
+E:\C#\tonghieutichthuongab\tonghieutichthuongab\obj\Debug\tonghieutichthuongab.csproj.SuggestedBindingRedirects.cache
+E:\C#\tonghieutichthuongab\tonghieutichthuongab\obj\Debug\tonghieutichthuongab.csproj.CoreCompileInputs.cache
+E:\C#\tonghieutichthuongab\tonghieutichthuongab\obj\Debug\tonghieutichthuongab.exe
+E:\C#\tonghieutichthuongab\tonghieutichthuongab\obj\Debug\tonghieutichthuongab.pdb

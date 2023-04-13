@@ -1,0 +1,8 @@
+E:\C#\maxminmang2chieu\maxminmang2chieu\bin\Debug\maxminmang2chieu.exe.config
+E:\C#\maxminmang2chieu\maxminmang2chieu\bin\Debug\maxminmang2chieu.exe
+E:\C#\maxminmang2chieu\maxminmang2chieu\bin\Debug\maxminmang2chieu.pdb
+E:\C#\maxminmang2chieu\maxminmang2chieu\obj\Debug\maxminmang2chieu.csproj.AssemblyReference.cache
+E:\C#\maxminmang2chieu\maxminmang2chieu\obj\Debug\maxminmang2chieu.csproj.SuggestedBindingRedirects.cache
+E:\C#\maxminmang2chieu\maxminmang2chieu\obj\Debug\maxminmang2chieu.csproj.CoreCompileInputs.cache
+E:\C#\maxminmang2chieu\maxminmang2chieu\obj\Debug\maxminmang2chieu.exe
+E:\C#\maxminmang2chieu\maxminmang2chieu\obj\Debug\maxminmang2chieu.pdb

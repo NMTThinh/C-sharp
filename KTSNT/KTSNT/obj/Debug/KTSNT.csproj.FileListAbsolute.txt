@@ -1,0 +1,8 @@
+E:\C#\KTSNT\KTSNT\bin\Debug\KTSNT.exe.config
+E:\C#\KTSNT\KTSNT\bin\Debug\KTSNT.exe
+E:\C#\KTSNT\KTSNT\bin\Debug\KTSNT.pdb
+E:\C#\KTSNT\KTSNT\obj\Debug\KTSNT.csproj.AssemblyReference.cache
+E:\C#\KTSNT\KTSNT\obj\Debug\KTSNT.csproj.SuggestedBindingRedirects.cache
+E:\C#\KTSNT\KTSNT\obj\Debug\KTSNT.csproj.CoreCompileInputs.cache
+E:\C#\KTSNT\KTSNT\obj\Debug\KTSNT.exe
+E:\C#\KTSNT\KTSNT\obj\Debug\KTSNT.pdb

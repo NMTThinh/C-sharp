@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mang2chieu", "mang2chieu\mang2chieu.csproj", "{68888A00-9D2F-43ED-A59E-862784617677}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68888A00-9D2F-43ED-A59E-862784617677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68888A00-9D2F-43ED-A59E-862784617677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68888A00-9D2F-43ED-A59E-862784617677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68888A00-9D2F-43ED-A59E-862784617677}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C77A253-F605-4AEF-B14C-9315885E035C}
+	EndGlobalSection
+EndGlobal

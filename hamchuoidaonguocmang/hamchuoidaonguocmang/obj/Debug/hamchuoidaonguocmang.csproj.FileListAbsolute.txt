@@ -1,0 +1,8 @@
+E:\C#\hamchuoidaonguocmang\hamchuoidaonguocmang\bin\Debug\hamchuoidaonguocmang.exe.config
+E:\C#\hamchuoidaonguocmang\hamchuoidaonguocmang\bin\Debug\hamchuoidaonguocmang.exe
+E:\C#\hamchuoidaonguocmang\hamchuoidaonguocmang\bin\Debug\hamchuoidaonguocmang.pdb
+E:\C#\hamchuoidaonguocmang\hamchuoidaonguocmang\obj\Debug\hamchuoidaonguocmang.csproj.AssemblyReference.cache
+E:\C#\hamchuoidaonguocmang\hamchuoidaonguocmang\obj\Debug\hamchuoidaonguocmang.csproj.SuggestedBindingRedirects.cache
+E:\C#\hamchuoidaonguocmang\hamchuoidaonguocmang\obj\Debug\hamchuoidaonguocmang.csproj.CoreCompileInputs.cache
+E:\C#\hamchuoidaonguocmang\hamchuoidaonguocmang\obj\Debug\hamchuoidaonguocmang.exe
+E:\C#\hamchuoidaonguocmang\hamchuoidaonguocmang\obj\Debug\hamchuoidaonguocmang.pdb
