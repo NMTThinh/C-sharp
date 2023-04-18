@@ -1,0 +1,82 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lophocsinh
+{
+    internal class Program
+    {
+        class HocSinh
+        {
+            private string ho;
+            private string ten;
+            private float diemToan;
+            private float diemVan;
+            private float diemAV;
+            private double diemTB;
+
+            public void nhapTT()
+            {
+                Console.Write("Nhap ho cua hoc sinh: ");
+                ho = Console.ReadLine();
+                Console.Write("Nhap ten cua hoc sinh: ");
+                ten = Console.ReadLine();
+                Console.Write("Nhap diem mon toan: ");
+                diemToan = float.Parse(Console.ReadLine());
+                Console.Write("Nhap diem mon van: ");
+                diemVan = float.Parse(Console.ReadLine());
+                Console.Write("Nhap diem mon anh van: ");
+                diemAV = float.Parse(Console.ReadLine());
+                diemTB = (diemToan + diemVan + diemAV) / 3;
+            }
+            public void xuatTT()
+            {
+                Console.WriteLine("Ho hoc sinh la: " + ho);
+                Console.WriteLine("Ten hoc sinh la: " + ten);
+                Console.WriteLine("Diem mon toan la: " + diemToan);
+                Console.WriteLine("Diem mon van la: " + diemVan);
+                Console.WriteLine("Diem mon anh van la : " + diemAV);
+                Console.WriteLine("Diem trung binh la: "+diemTB);
+            }
+            class LopHoc
+            {
+                List<HocSinh> hs = new List<HocSinh>();
+                HocSinh a;
+                public void NhapLophoc()
+                {
+                    Console.Write("Nhap so luong HS:");
+                    int n = int.Parse(Console.ReadLine());
+
+                    for (int i = 0; i < n; i++)
+                    {
+                        a = new HocSinh();
+                        Console.WriteLine("Nhap thong tin hoc sinh thu "+(i+1));
+                        a.nhapTT();
+                        hs.Add(a);
+                    }
+
+                }
+                public void XuatLophoc()
+                {
+                    foreach (HocSinh a in hs)
+                    {
+                        Console.WriteLine("---------------");
+                        a.xuatTT();
+                    }
+                }
+                static void Main(string[] args)
+                {
+                    LopHoc lh = new LopHoc();
+                    lh.NhapLophoc();
+                    Console.WriteLine("----------------");
+                    lh.XuatLophoc();
+                    Console.WriteLine("----------------");
+                    Console.ReadLine();
+
+                }
+            }
+        }
+    }
+}
