@@ -1,0 +1,171 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Globalization;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Schema;
+
+namespace lophocsinh
+{
+
+    internal class Program
+    {
+        class HocSinh
+        {
+            public string ho;
+            public string ten;
+            public float diemToan;
+            public float diemVan;
+            public float diemAV;
+            public double diemTB;
+            public HocSinh nhapTT()
+            {
+                HocSinh hs = new HocSinh();
+                Console.Write("Nhap ho cua hoc sinh: ");
+                hs.ho = Console.ReadLine();
+                Console.Write("Nhap ten cua hoc sinh: ");
+                hs.ten = Console.ReadLine();
+                Console.Write("Nhap diem mon toan: ");
+                hs.diemToan = float.Parse(Console.ReadLine());
+                Console.Write("Nhap diem mon van: ");
+                hs.diemVan = float.Parse(Console.ReadLine());
+                Console.Write("Nhap diem mon anh van: ");
+                hs.diemAV = float.Parse(Console.ReadLine());
+                hs.diemTB = (hs.diemToan + hs.diemVan + hs.diemAV) / 3;
+                return hs;
+            }
+    public void xuatTT()
+            {
+                Console.WriteLine("Ho cua hoc sinh la: " + ho);
+                Console.WriteLine("Ten cua hoc sinh la: " + ten);
+                Console.WriteLine("Diem mon toan la: " + diemToan);
+                Console.WriteLine("Diem mon van la: " + diemVan);
+                Console.WriteLine("Diem mon anh van la: " + diemAV);
+                Console.WriteLine("Diem trung binh mon la: " + diemTB);
+            }
+        }
+        static void Main(string[] args)
+        {
+            //Tạo danh sách học sinh 
+            List<HocSinh> hocSinhs = new List<HocSinh>();
+            Console.Write("Nhap so luong hoc sinh: ");
+            //bổ sung bước kt nReadline có phải là số nguyên hay không 
+            string nReadline = Console.ReadLine();
+            int n = int.Parse(nReadline);
+            //Thực hiện vòng lặp để nhập học sinh
+            for (int i = 0; i < n; i++)
+            {
+                HocSinh hs = new HocSinh();
+                Console.WriteLine("Nhap thong tin sinh vien thu " + (i + 1));
+                hs = hs.nhapTT();
+                hocSinhs.Add(hs);
+            }
+            Console.WriteLine("-------------------");
+            //Thực hiện vòng lặp để xuất thông tin 
+            foreach (HocSinh hs in hocSinhs)
+            {
+                Console.WriteLine("---------------");
+                hs.xuatTT();
+            }
+            //Sắp xếp dtb từ thấp đến cao          
+            hocSinhs.Sort(
+                    (p1, p2) =>
+                    {
+                        if (p1.diemTB == p2.diemTB) return 0;
+                        if (p1.diemTB < p2.diemTB) return -1;
+                        return 1;
+                    }
+                    );
+            //in ra dtb từ thấp đến cao 
+            Console.WriteLine("----------------");
+            Console.WriteLine("Diem trung binh tu thap den cao:");
+            //Thực hiện vòng lặp xuất tên hs từ thấp đến cao 
+            foreach (HocSinh hs in hocSinhs)
+            {
+                Console.WriteLine(hs.ten + "-" + hs.diemTB);
+            }
+            //Tìm học sinh có điểm trung bình cao nhất 
+
+            foreach (HocSinh hs in hocSinhs)
+            {
+                double max = 0;
+                for (int i = 1; i < n; i++)
+                {
+                    if (hs.diemTB == max)
+                    {
+                        Console.WriteLine("hoc sinh co diem trung binh cao nhat la: " + hs.ten + "-" + hs.diemTB);
+                    }
+                }
+            }
+            //In ra các học sinh có điểm toán >=8
+            foreach (HocSinh hs in hocSinhs)
+            {
+                if (hs.diemToan >= 8)
+                {
+                    Console.WriteLine("Hoc sinh tren 8 diem toan la: " + hs.ten + "-" + hs.diemToan);
+                }
+            }
+            Console.WriteLine("------------------");
+            //Nhập thêm 1 học sinh vào danh sách 
+            Console.WriteLine("Neu ban muon nhap them hoc sinh nhan phim 1: ");
+            Console.WriteLine("------------------");
+            Console.WriteLine("Muon thoat ra thi nhan cai gi cung duoc....COOK");
+            Console.WriteLine("------------------");
+            Console.Write("Lua chon cua ban la: ");
+            int m = int.Parse(Console.ReadLine());
+            do
+            {
+                if (m == 1)
+                {
+                    HocSinh hss = new HocSinh();
+                    Console.WriteLine("Nhap thong tin sinh vien " );
+                    hss = hss.nhapTT();
+                    hocSinhs.Add(hss);
+                }
+                Console.WriteLine("Danh sach sau khi cap nhat la.");
+                foreach (HocSinh hss in hocSinhs)
+                {
+                    Console.WriteLine("---------------");
+                    hss.xuatTT();
+                }
+                //in ra danh sách điểm trung bình từ thấp đến cao sau khi cập nhật 
+                hocSinhs.Sort(
+                    (p1, p2) =>
+                    {
+                        if (p1.diemTB == p2.diemTB) return 0;
+                        if (p1.diemTB < p2.diemTB) return -1;
+                        return 1;
+                    }
+                    );
+                //in ra dtb từ thấp đến cao 
+                Console.WriteLine("----------------");
+                Console.WriteLine("Diem trung binh tu thap den cao sau khi cap nhat la:");
+                //Thực hiện vòng lặp xuất tên hs từ thấp đến cao 
+                foreach (HocSinh hs in hocSinhs)
+                {
+                    Console.WriteLine(hs.ten + "-" + hs.diemTB);
+                }
+                //In ra học sinh có điẻm toán >=8 sau khi cập nhật 
+                Console.WriteLine("---------------");
+                foreach (HocSinh hs in hocSinhs)
+                {
+                    if (hs.diemToan >= 8)
+                    {
+                        Console.Write("Danh sach sau cap nhat ");
+                        Console.WriteLine("hoc sinh tren 8 diem toan la: " + hs.ten + "-" + hs.diemToan);
+                    }
+                }
+            } while (m != 1);
+            
+        }
+    }
+}
+
+
+// 1 la khai bao
+// 2 la khoi tao
+// 3 la gan gia tri
+// NULL kieu du lieu int... gan bth, chi co list khong gan duoc
