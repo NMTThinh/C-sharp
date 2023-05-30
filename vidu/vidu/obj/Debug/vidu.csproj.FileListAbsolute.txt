@@ -1,0 +1,8 @@
+E:\C#\vidu\vidu\bin\Debug\vidu.exe.config
+E:\C#\vidu\vidu\bin\Debug\vidu.exe
+E:\C#\vidu\vidu\bin\Debug\vidu.pdb
+E:\C#\vidu\vidu\obj\Debug\vidu.csproj.AssemblyReference.cache
+E:\C#\vidu\vidu\obj\Debug\vidu.csproj.SuggestedBindingRedirects.cache
+E:\C#\vidu\vidu\obj\Debug\vidu.csproj.CoreCompileInputs.cache
+E:\C#\vidu\vidu\obj\Debug\vidu.exe
+E:\C#\vidu\vidu\obj\Debug\vidu.pdb
